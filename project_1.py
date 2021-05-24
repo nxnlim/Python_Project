@@ -134,33 +134,43 @@ attrit_data[['Total_Revolving_Bal', 'Total_Amt_Chng_Q4_Q1', 'Total_Trans_Amt',
 
 
 sns.lmplot('Total_Revolving_Bal', 'Total_Amt_Chng_Q4_Q1', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Revolving_Bal vs Total_Amt_Chng_Q4_Q1')
 # plt.savefig('lmplot_01.png')
 
 sns.lmplot('Total_Revolving_Bal', 'Total_Trans_Amt', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Revolving_Bal vs Total_Trans_Amt')
 # plt.savefig('lmplot_02.png')
 
 sns.lmplot('Total_Revolving_Bal', 'Total_Trans_Ct', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Revolving_Bal vs Total_Trans_Ct')
 # plt.savefig('lmplot_03.png')
 
 sns.lmplot('Total_Revolving_Bal', 'Total_Ct_Chng_Q4_Q1', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Revolving_Bal vs Total_Ct_Chng_Q4_Q1')
 # plt.savefig('lmplot_04.png')
 
 sns.lmplot('Total_Amt_Chng_Q4_Q1', 'Total_Trans_Amt', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Amt_Chng_Q4_Q1 vs Total_Trans_Amt')
 # plt.savefig('lmplot_05.png')
 
 sns.lmplot('Total_Amt_Chng_Q4_Q1', 'Total_Trans_Ct', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Amt_Chng_Q4_Q1 vs Total_Trans_Ct')
 # plt.savefig('lmplot_06.png')
 
 sns.lmplot('Total_Amt_Chng_Q4_Q1', 'Total_Ct_Chng_Q4_Q1', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Amt_Chng_Q4_Q1 vs Total_Ct_Chng_Q4_Q1')
 # plt.savefig('lmplot_07.png')
 
 sns.lmplot('Total_Trans_Amt', 'Total_Trans_Ct', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Trans_Amt vs Total_Trans_Ct')
 # plt.savefig('lmplot_08.png')
 
 sns.lmplot('Total_Trans_Amt', 'Total_Ct_Chng_Q4_Q1', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Trans_Amt vs Total_Ct_Chng_Q4_Q1')
 # plt.savefig('lmplot_09.png')
 
 sns.lmplot('Total_Trans_Ct', 'Total_Ct_Chng_Q4_Q1', bank_data, fit_reg = False, hue='Attrition_Flag', scatter_kws = {'alpha':0.2})
+plt.title('Total_Trans_Ct vs Total_Ct_Chng_Q4_Q1')
 # plt.savefig('lmplot_10.png')
 
 exist_data = bank_cleaned.loc[bank_cleaned.Attrition_Flag == 'Existing Customer']
